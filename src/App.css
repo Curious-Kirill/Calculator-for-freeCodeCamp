@@ -1,0 +1,160 @@
+:root {
+  --white: white;
+  --light-gray: #f0f0f0;
+  --dark-gray: #6c6c6c;
+  --black: #000000;
+  --yellow: red;
+}
+
+.container {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#calculator {
+ 
+  display: grid;
+  grid-template-areas:
+    "display display display display"
+    "clear negative percentage divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals";
+    height: 385px;
+    width: 320px;
+   margin: 0 auto;
+   padding: 2px 2px 0 2px;
+   background-color: black;
+    border-radius: 0%;
+    display:grid;
+    grid-template-rows: 16.5% 16.5% 16.5% 16.5% 16.5% 16.5%;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.light-gray {
+  background-color: var(--light-gray);
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.yellow {
+  background-color: var(--yellow);
+  color: white;
+}
+
+button {
+  height: 100px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+
+  width: 100%;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#answer {
+  font-size: 30px;
+  height: 4px;
+}
+
+#expression {
+  font-size: 20px;
+  height: 3px;
+  color: var(--dark-gray);
+}
+
+#display {
+  grid-area: display;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#negative {
+  grid-area: negative;
+}
+
+#percentage {
+  grid-area: percentage;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#add {
+  grid-area: add;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#equals {
+  grid-area: equals;
+}
